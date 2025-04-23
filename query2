@@ -1,0 +1,39 @@
+This SQL project focuses on the employee_new1 table, created under the chitti database. It demonstrates the use of auto-incrementing primary keys, date handling, and multiple conditions in queries. This project is a great way to practice advanced table structures and conditional data filtering in SQL.
+
+📁 Table Schema
+CREATE TABLE employee_new1 (
+    id INT PRIMARY KEY IDENTITY,
+    name VARCHAR(222),
+    salary INT,
+    date_of_joining DATE,
+    manager_name VARCHAR(222),
+    incentive INT,
+    annual_commission INT
+);
+id is an auto-incrementing primary key using IDENTITY.
+
+📌 Operations Performed
+Database Creation
+CREATE DATABASE chitti;
+INSERT INTO employee_new1(name, salary, date_of_joining, manager_name, incentive, annual_commission)
+VALUES 
+('chinnu', 44432, '2024-04-06', 'akshay', 3000, 2000),
+('uday', 44712, '2024-02-07', 'akshay', 3000, 1100),
+('sri', 42372, '2024-08-06', 'akshay', 3000, 1340),
+('ram', 74832, '2024-04-09', 'akshay', 3000, 1800);
+SELECT * FROM employee_new1
+WHERE name = 'chinnu' AND name = 'sri';
+
+🔧 Tools Used
+SQL Server / MySQL (with small tweaks)
+
+SQL command-line tools or a GUI like SSMS / DBeaver
+
+📂 Perfect For:
+Practicing identity columns (auto-increment)
+
+Handling date fields
+
+Understanding AND logic and filtering
+
+Managing employee data with incentives and commissions
